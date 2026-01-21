@@ -27,6 +27,12 @@ const translations = {
         service_mobile_title: 'Desktop & Mobile Development',
         service_mobile_desc: 'Native and cross-platform applications designed for seamless user experiences across all devices.',
         
+        // Portfolio Section
+        section_portfolio: 'Our Portfolio',
+        portfolio_lavanderia_title: 'Industrial Laundry Website',
+        portfolio_lavanderia_desc: 'A professional website for an industrial laundry business featuring service information, pricing, and contact details. Built with modern design and responsive layout.',
+        portfolio_visit_btn: 'Visit Website',
+        
         // Footer
         footer_copyright: '© 2024 Roostix Software & Solutions. Vigilant. Innovative. Ready.'
     },
@@ -57,6 +63,12 @@ const translations = {
         service_custom_desc: 'Los problemas únicos requieren código único. Creamos exactamente lo que necesitas.',
         service_mobile_title: 'Desarrollo Desktop y Móvil',
         service_mobile_desc: 'Aplicaciones nativas y multiplataforma diseñadas para experiencias de usuario perfectas en todos los dispositivos.',
+        
+        // Portfolio Section
+        section_portfolio: 'Nuestro Portafolio',
+        portfolio_lavanderia_title: 'Sitio Web de Lavandería Industrial',
+        portfolio_lavanderia_desc: 'Un sitio web profesional para un negocio de lavandería industrial con información de servicios, precios y detalles de contacto. Construido con diseño moderno y diseño responsivo.',
+        portfolio_visit_btn: 'Visitar Sitio Web',
         
         // Footer
         footer_copyright: '© 2024 Roostix Software & Solutions. Vigilante. Innovador. Listo.'
