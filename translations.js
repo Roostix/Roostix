@@ -33,6 +33,18 @@ const translations = {
         portfolio_lavanderia_desc: 'A professional website for an industrial laundry business featuring service information, pricing, and contact details. Built with modern design and responsive layout.',
         portfolio_visit_btn: 'Visit Website',
         
+        // Contact Section
+        section_contact: 'Contact Us',
+        contact_info: 'Get in Touch',
+        contact_phone: 'Phone',
+        contact_whatsapp: 'WhatsApp',
+        contact_whatsapp_text: 'Chat with us',
+        contact_form_title: 'Send us a Message',
+        contact_placeholder_name: 'Your Name',
+        contact_placeholder_email: 'Your Email',
+        contact_placeholder_message: 'Your Message',
+        contact_btn_send: 'Send Message',
+        
         // Footer
         footer_copyright: '© 2024 Roostix Software & Solutions. Vigilant. Innovative. Ready.'
     },
@@ -69,6 +81,18 @@ const translations = {
         portfolio_lavanderia_title: 'Sitio Web de Lavandería Industrial',
         portfolio_lavanderia_desc: 'Un sitio web profesional para un negocio de lavandería industrial con información de servicios, precios y detalles de contacto. Construido con diseño moderno y diseño responsivo.',
         portfolio_visit_btn: 'Visitar Sitio Web',
+        
+        // Contact Section
+        section_contact: 'Contáctenos',
+        contact_info: 'Ponte en Contacto',
+        contact_phone: 'Teléfono',
+        contact_whatsapp: 'WhatsApp',
+        contact_whatsapp_text: 'Chatea con nosotros',
+        contact_form_title: 'Envíanos un Mensaje',
+        contact_placeholder_name: 'Tu Nombre',
+        contact_placeholder_email: 'Tu Correo Electrónico',
+        contact_placeholder_message: 'Tu Mensaje',
+        contact_btn_send: 'Enviar Mensaje',
         
         // Footer
         footer_copyright: '© 2024 Roostix Software & Solutions. Vigilante. Innovador. Listo.'
