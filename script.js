@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Scroll reveal animation
+    initScrollReveal();
     
-    // 1. Animación de revelado (Scroll Reveal)
-    const observerOptions = {
-        threshold: 0.1
-    };
+    // Service card interactions
+    initServiceCards();
+});
 
+function initScrollReveal() {
+    const observerOptions = { threshold: 0.1 };
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -13,28 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Aplicar a títulos y tarjetas
     document.querySelectorAll('.reveal, .service-card').forEach(el => {
-        el.style.opacity = "0";
-        el.style.transition = "all 0.8s ease-out";
         observer.observe(el);
     });
+}
 
-    // Función simple para manejar la opacidad al entrar en vista
-    window.addEventListener('scroll', () => {
-        document.querySelectorAll('.visible').forEach(el => {
-            el.style.opacity = "1";
-            el.style.transform = "translateY(0)";
-        });
-    });
-
-    // 2. Efecto de clic en tarjetas
-    const cards = document.querySelectorAll('.service-card');
-    cards.forEach(card => {
+function initServiceCards() {
+    document.querySelectorAll('.card-hover').forEach(card => {
         card.addEventListener('click', () => {
-            const service = card.getAttribute('data-service');
-            console.log(`Roostix: Cargando solución para ${service}...`);
-            // Aquí podrías redirigir a una página específica
+            const service = card.querySelector('h3')?.textContent || 'Service';
+            console.log(`Roostix: Loading ${service}...`);
         });
     });
-});
+}
