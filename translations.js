@@ -24,6 +24,8 @@ const translations = {
         service_server_desc: '24/7 monitoring, security patching, and optimization for zero downtime.',
         service_custom_title: 'Custom Software',
         service_custom_desc: 'Unique problems require unique code. We build exactly what you need.',
+        service_mobile_title: 'Desktop & Mobile Development',
+        service_mobile_desc: 'Native and cross-platform applications designed for seamless user experiences across all devices.',
         
         // Footer
         footer_copyright: '© 2024 Roostix Software & Solutions. Vigilant. Innovative. Ready.'
@@ -53,6 +55,8 @@ const translations = {
         service_server_desc: 'Monitoreo 24/7, parches de seguridad y optimización para cero tiempo de inactividad.',
         service_custom_title: 'Software Personalizado',
         service_custom_desc: 'Los problemas únicos requieren código único. Creamos exactamente lo que necesitas.',
+        service_mobile_title: 'Desarrollo Desktop y Móvil',
+        service_mobile_desc: 'Aplicaciones nativas y multiplataforma diseñadas para experiencias de usuario perfectas en todos los dispositivos.',
         
         // Footer
         footer_copyright: '© 2024 Roostix Software & Solutions. Vigilante. Innovador. Listo.'
