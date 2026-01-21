@@ -32,6 +32,9 @@ const translations = {
         portfolio_lavanderia_title: 'Industrial Laundry Website',
         portfolio_lavanderia_desc: 'A professional website for an industrial laundry business featuring service information, pricing, and contact details. Built with modern design and responsive layout.',
         portfolio_visit_btn: 'Visit Website',
+        portfolio_dental_title: 'Dental Management Software',
+        portfolio_dental_desc: 'A comprehensive desktop application for dental clinics featuring patient booking, medical records management, odontogram visualization, and integrated database. Built with robust architecture for efficient clinic operations.',
+        portfolio_dental_status: 'Custom Desktop Solution',
         
         // Contact Section
         section_contact: 'Contact Us',
@@ -59,7 +62,7 @@ const translations = {
         hero_intelligent: 'Software Inteligente',
         hero_description: 'Roostix proporciona desarrollo de alto rendimiento, integración de IA y mantenimiento de servidores para mantener tu negocio adelantado.',
         btn_viewsolutions: 'Ver Soluciones',
-        btn_consultation: 'Reservar Consulta',
+        btn_consultation: 'Agendar cita',
         
         // Services Section
         section_expertise: 'Nuestra Experiencia',
@@ -81,6 +84,9 @@ const translations = {
         portfolio_lavanderia_title: 'Sitio Web de Lavandería Industrial',
         portfolio_lavanderia_desc: 'Un sitio web profesional para un negocio de lavandería industrial con información de servicios, precios y detalles de contacto. Construido con diseño moderno y diseño responsivo.',
         portfolio_visit_btn: 'Visitar Sitio Web',
+        portfolio_dental_title: 'Software de Gestión Dental',
+        portfolio_dental_desc: 'Una aplicación de escritorio integral para clínicas dentales con reserva de pacientes, gestión de registros médicos, visualización de odontograma y base de datos integrada. Construida con arquitectura robusta para operaciones eficientes de la clínica.',
+        portfolio_dental_status: 'Solución de Escritorio Personalizada',
         
         // Contact Section
         section_contact: 'Contáctenos',
