@@ -15,15 +15,18 @@
             <img src="resources/roostix_logo_new_no_letter_nobg.png" alt="Roostix Logo" class="w-16 h-16">
             <span class="text-2xl font-bold tracking-tight">Roostix</span>
         </div>
-        <div class="hidden md:flex space-x-8 text-gray-300 items-center">
-            <a href="#services" data-key="nav_services" class="hover:text-sky-400">Services</a>
-            <a href="#about" data-key="nav_about" class="hover:text-sky-400">About</a>
-            <a href="#contact" data-key="nav_getstarted" class="px-5 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-full transition">Get Started</a>
+        <div class="flex items-center space-x-4 md:space-x-8 text-gray-300">
+            <!-- Navigation Links - Hidden on Mobile -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#services" data-key="nav_services" class="hover:text-sky-400">Services</a>
+                <a href="#about" data-key="nav_about" class="hover:text-sky-400">About</a>
+                <a href="#contact" data-key="nav_getstarted" class="px-5 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-full transition">Get Started</a>
+            </div>
             
-            <!-- Language Switcher -->
-            <div class="flex space-x-2 ml-4 pl-4 border-l border-gray-600">
-                <button id="lang-en" class="lang-btn px-3 py-1 rounded bg-sky-600 text-white active-lang">EN</button>
-                <button id="lang-es" class="lang-btn px-3 py-1 rounded hover:bg-sky-600 text-gray-300">ES</button>
+            <!-- Language Switcher - Always Visible -->
+            <div class="flex space-x-2 pl-4 border-l border-gray-600">
+                <button id="lang-en" class="lang-btn px-2 md:px-3 py-1 rounded bg-sky-600 text-white active-lang text-sm md:text-base">EN</button>
+                <button id="lang-es" class="lang-btn px-2 md:px-3 py-1 rounded hover:bg-sky-600 text-gray-300 text-sm md:text-base">ES</button>
             </div>
         </div>
     </nav>
