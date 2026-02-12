@@ -1,0 +1,8 @@
+.border-gradient {
+    position: relative;
+  padding: 1px;
+  border-radius: 0.5rem; /* rounded-lg */
+  background: linear-gradient(to right, #ef4444, #f97316);
+  box-shadow: 0 0 3px 1px #ef4444, 0 0 3px 1px #f97316;
+
+}

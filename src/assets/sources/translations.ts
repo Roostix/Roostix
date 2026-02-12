@@ -1,4 +1,62 @@
-const translations = {
+type TranslationKeys = {
+    // Navigation
+    nav_services: string;
+    nav_about: string;
+    nav_getstarted: string;
+    
+    // Hero Section
+    hero_dawn: string;
+    hero_intelligent: string;
+    hero_description: string;
+    btn_viewsolutions: string;
+    btn_consultation: string;
+    
+    // Services Section
+    section_expertise: string;
+    service_web_title: string;
+    service_web_desc: string;
+    service_ai_title: string;
+    service_ai_desc: string;
+    service_erp_title: string;
+    service_erp_desc: string;
+    service_server_title: string;
+    service_server_desc: string;
+    service_custom_title: string;
+    service_custom_desc: string;
+    service_mobile_title: string;
+    service_mobile_desc: string;
+    
+    // Portfolio Section
+    section_portfolio: string;
+    portfolio_lavanderia_title: string;
+    portfolio_lavanderia_desc: string;
+    portfolio_visit_btn: string;
+    portfolio_dental_title: string;
+    portfolio_dental_desc: string;
+    portfolio_dental_status: string;
+    
+    // Contact Section
+    section_contact: string;
+    contact_info: string;
+    contact_phone: string;
+    contact_whatsapp: string;
+    contact_whatsapp_text: string;
+    contact_form_title: string;
+    contact_placeholder_name: string;
+    contact_placeholder_email: string;
+    contact_placeholder_message: string;
+    contact_btn_send: string;
+    
+    // Footer
+    footer_copyright: string;
+};
+
+type Translations = {
+    en: TranslationKeys;
+    es: TranslationKeys;
+};
+
+export const translations: Translations = {
     en: {
         // Navigation
         nav_services: 'Services',
@@ -104,3 +162,4 @@ const translations = {
         footer_copyright: '© 2024 Roostix Software & Solutions. Vigilante. Innovador. Listo.'
     }
 };
+
