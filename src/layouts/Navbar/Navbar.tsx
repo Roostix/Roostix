@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/contexts/TranslationContext";
+import logo from "@/assets/icons/roostix-logo.svg";
 
 export default function Navbar() {
   const { language, setLanguage, t } = useTranslation();
@@ -10,7 +11,7 @@ export default function Navbar() {
 
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center space-x-5 rtl:space-x-reverse">
-            <img src="/src/assets/icons/roostix-logo.svg" className="w-7" alt="Flowbite Logo" />
+            <img src={logo} className="w-7" alt="Roostix Logo" />
             <span className="self-center text-4xl text-gray-300 font-bold whitespace-nowrap ">Roostix</span>
           </a>
 
