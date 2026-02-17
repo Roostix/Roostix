@@ -17,7 +17,7 @@ export default function SectionCard() {
 
 
 
-<section  className="max-w-7xl mx-auto py-20 px-6">
+<section id="services" className="max-w-7xl mx-auto py-20 px-6">
         <h2 className="text-3xl font-bold mb-12 accent-border inline-block">{t('section_expertise')}</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

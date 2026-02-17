@@ -1,9 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/contexts/TranslationContext";
 import logo from "@/assets/icons/roostix-logo.svg";
+import { useState } from "react";
+
 
 export default function Navbar() {
   const { language, setLanguage, t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setIsOpen(false); // Close mobile menu after clicking
+    }
+  };
+
 
   return (
     <>
@@ -15,21 +27,25 @@ export default function Navbar() {
             <span className="self-center text-4xl text-gray-300 font-bold whitespace-nowrap ">Roostix</span>
           </a>
 
-          <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
-            <span className="sr-only">Open main menu</span>
+          <button   onClick={() => setIsOpen(!isOpen)}   type="button" className=" inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base 
+          md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:rounded focus:ring-1 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
+            <span className="sr-only"></span>
             <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h14" /></svg>
           </button>
 
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default" >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+          
+          <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}>
+
+
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4   rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
               <li>
-                <Button variant="link">{t('nav_services')}</Button>
+                <Button variant="link" onClick={() => scrollToSection('services')}>{t('nav_services')}</Button>
               </li>
               <li>
                 <Button variant="link">{t('nav_about')}</Button>
               </li>
               <li>
-                <Button variant="outlineModifi" size="lg">{t('nav_getstarted')}</Button>
+                <Button variant="outlineModifi" size="lg" onClick={() => scrollToSection('contact')}>{t('nav_getstarted')}</Button>
               </li>
               <li>
                 <div className="flex space-x-2 pl-5  p-1 border-l border-gray-600">

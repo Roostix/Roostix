@@ -5,17 +5,17 @@
   background: radial-gradient(#ff0, #d00);
   box-shadow: 0 0 40px 6px #f20, 0 0 150px 10px #f33;
 
-  animation: float 4s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
   0% {
-    transform: translateY(0);
+    transform: translateY(30px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-50px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(30px);
   }
 }
